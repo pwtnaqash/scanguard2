@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainCard-session{
+    padding: 4rem 4rem;
+    background-color: #faf9ff;
+    text-align: center;
+}
+
+#mainCard-session1{
+    padding: 7rem 4rem;
+    background-color: #ffffff;
+}
+
+#mainCard-session2{
+    padding: 4rem 4rem;
+    background-image: url(./img/price-bg1.png);
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#card_session_text p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ff7425;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px;
+    display: block;
+}
+#card_session_text h5{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #19082d;
+    margin: 0;
+}
+#cardsession_inner{
+    width: 100%;
+    text-align: center !important;
+    margin-top: 2rem;
+}
+#mainCARD_session{
+    margin-top: 2rem;
+}
+#card1{
+    padding: 3rem 2rem;
+    border: none;
+    border-radius: 2.2rem;
+    box-shadow: 38px 45px 93px -10px rgba(0, 0, 0, 0.05);
+}
+#card1:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 38px 45px 93px -10px rgba(0, 0, 0, 0.151);
+}
+
+#card2{
+    padding: 1rem ;
+    text-align: start;
+    border: none;
+    border-radius: 2.2rem;
+    box-shadow: 38px 45px 93px -10px rgba(0, 0, 0, 0.05);
+}
+#card2:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 38px 45px 93px -10px rgba(0, 0, 0, 0.151);
+}
+
+
+#cardsession_inner img{
+    text-align: center;
+}
+.card-title{
+    color: #19082d;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Jost', sans-serif !important;
+    font-weight: 600;
+    /* margin-top: 1rem; */
+}
+.card-title:hover{
+    color: #6722b5;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #3E3E3E;
+    margin-bottom: 20px;
+}
+#link_card a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 16px;
+    color: #3E3E3E;
+    font-family: "Jost", Sans-serif;
+}
+#link_card a:hover{
+    color: #6722b5;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+#link_card a i {
+    margin-left: 6px;
+}
+
+#link_card a:hover i {
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* sfitf start */
+
+#SWIPY_MainCol{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+#SWIPY_img{
+    text-align: center;
+    background-image: url(./img/min.png);
+    background-size: 100% 27rem;
+    width: 27rem;
+    height: 27rem;
+}
+
+#SWIPY_img1{
+    background-image: url(./img/about.png);
+    position: absolute;
+    background-size: 100% 31rem;
+    width: 25rem;
+    height: 31rem;
+}
+#mainCard-session1_blue_img{
+    width: 100%;
+    text-align: end;
+}
+
+#mainCard-session1_blue_img img{
+    margin: 2rem 7rem;
+}
+
+#mainCard-session1_bron_img{
+    width: 100%;
+    text-align: center;
+}
+
+#mainCard-session1_bron_img img{
+    margin: 2rem 9rem 2rem 0rem;
+}
+
+#MainSession_second_swipy p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #6722b5;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px;
+    display: block;
+}
+
+#MainSession_second_swipy h3{
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #19082d;
+    margin-bottom: 1rem;
+}
+#MainSession_second_swipy span{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+#swipy_card_icon p{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #ff7425;
+}
+
+#swipy_card_icon h6{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #413F3F;
+}
+#Swifty_btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(103, 34, 181, 0.85) !important;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Jost", Sans-serif;
+    background-color: rgba(103, 34, 181, 0.85);
+    padding: 16px 35px 16px 35px;
+    z-index: 1;
+    border-radius: 0px 0px 0px 0px;
+    transition: all 0.4s ease-in-out 0s;
+    overflow: hidden;
+}
+
+.plan_btn{
+    background-color: #ffffff;
+    width: 30%;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+}
+#monthly{
+    margin: 0rem 0.3rem;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.7rem;
+    color: white;
+    font-weight: 500;
+    background-color: #6722B5;
+}
+
+#free_plane{
+    border-bottom: 1px solid #eeeeee;
+}
+#free_plane h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #6722b5;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#free_plane h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: #6722b5;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+#our_plane_ul li{
+    list-style-type: none;
+}
+#our_plane_ul h6{
+    font-size: 16px;
+    color: #3E3E3E;
+    opacity: .8;
+    line-height: 22px;
+    padding: 1rem 0rem;
+    font-family: 'Jost', sans-serif;
+}
+#our_plane_li{
+    margin-top: 1rem;
+}
+#our_plane_li i{
+    border: 1px solid silver;
+    /* padding: 0.3rem; */
+    text-align: center;
+    align-items: center;
+    padding-top: 0.2rem;
+    font-size: 0.7rem;
+    border-radius: 2rem;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+#our_plane_li:hover{
+    color:#6722b5;
+    /* padding-left: 36px; */
+    /* margin: 15px 0; */
+    transition: all .5s ease;
+}
+
+#our_plan_btn{
+    display: inline-block;
+    border: 1px solid #6722B5;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6722B5;
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#our_plan_btn:hover{
+    color: white;
+    background-color: #6722B5;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+@media(min-width:280px) and (max-width:540px){
+    #mainCard-session{
+        padding: 1rem;
+    }
+    .card{
+        padding: 1rem;
+    }
+    #SWIPY_img{
+        display: none;
+    }
+    #SWIPY_img1{
+        width: 100%;
+    }
+    #mainCard-session1{
+        padding: 2rem;
+        background-color: #ffffff;
+    }
+    #MainSession_second_swipy h3{
+        font-size: 25px;
+    }
+    #mainCard-session2{
+        padding: 2rem;
+        background-color: #ffffff;
+    }
+    .plan_btn{
+        width: 100%;
+    }
+    #monthly{
+        margin: 0rem 0.2rem;
+        padding: 0.6rem 1.7rem;
+    }
+}
+
+
+
+@media(min-width:541px) and (max-width:1024px){
+    #mainCard-session{
+        padding: 2rem;
+    }
+    .card{
+        padding: 1rem;
+    }
+    #MainSession_second_swipy h3{
+        font-size: 35px;
+    }
+    .plan_btn{
+        width: 40%;
+    }
+    #monthly{
+        margin: 0rem 0.2rem;
+        padding: 0.6rem 1.7rem;
+    }
+}
