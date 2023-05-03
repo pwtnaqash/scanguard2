@@ -4,6 +4,70 @@
     box-sizing: border-box;
 }
 
+#Main_banner{
+    background-image: url(./img/main-bg.jpg);
+    background-size: 100% 120%;
+    height: 120vh;
+    width: 100%;
+}
+#Main_banner_inner{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+
+#Main_banner_inner h1{
+    font-size:65px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #19082d;
+    margin: 0 0 27px;
+}
+#Main_banner_inner p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #3e3e3e;
+    margin: 0 0 45px;
+}
+#banner_right{
+    width: 100%;
+}
+#banner_right img{
+    width: 100%;
+}
+
+#banner_btn1{
+    background-color: rgba(103, 34, 181, 0.85);
+    padding: 21px 33px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+}
+#banner_btn2 i{
+    position: relative;
+    border-width: 1px;
+    border-radius: 15px;
+    font-weight: 600;
+    border-color: #6722b5;
+    color: #6722b5;
+    border-style: solid;
+    margin-left: 12px;
+    margin-right: 15px;
+    padding: 22px 33px !important;
+    width: 80px;
+    height: 69px;
+    display: inline-block;
+}
+#introPlay{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3E3E3E;
+}
+
 #mainCard-session{
     padding: 4rem 4rem;
     background-color: #faf9ff;
@@ -19,13 +83,25 @@
     padding: 4rem 4rem;
     background-image: url(./img/price-bg1.png);
     width: 100%;
-    /* height: 100vh; */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+}
+
+#mainCard-session4{
+    padding: 6rem 4rem;
+    background-color: #e5e5e5;
+    width: 100%;
+    text-align: center;
+}
+
+#mainCard-session3{
+    padding: 4rem 4rem;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+#mainCard-session5{
+    background-color: #6721b5;
+    padding: 6rem 1rem 0rem 1rem;
 }
 
 
@@ -229,7 +305,8 @@
 
 .plan_btn{
     background-color: #ffffff;
-    width: 30%;
+    /* width: 30%; */
+    margin: 0rem 26rem;
     padding: 1.2rem;
     margin-top: 1rem;
     border-radius: 0.3rem;
@@ -316,13 +393,299 @@
     transition: all 0.3s ease-in-out;
 }
 
+#TESTIMONIAL_main{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+#TESTIMONIAL_title p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ff7425;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px;
+    display: block;
+}
 
+#TESTIMONIAL_title h5{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #19082d;
+    margin: 0;
+}
+#TESTIMONIAL_caret i{
+    font-size: 2rem;
+    margin: 0rem 1rem;
+}
+
+#free_plane2 h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #6722b5;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+#quest2{
+    display: none;
+}
+.TESTIMONIAL:hover #quest1{
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.TESTIMONIAL:hover #quest2{
+    display: block;
+    transition: all 0.1s ease-in-out;
+}
+#TESTIMONIAL-text p{
+    font-size: 20px;
+    line-height: 34px;
+    color: #3e3e3e;
+    margin: 34px 0 25px 0;
+}
+#TESTIMONIAL_user{
+    display: flex;
+}
+#TESTIMONIAL_img-text{
+    margin-left: 0.6rem;
+}
+#TESTIMONIAL_img-text h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #372748;
+    font-family: "Jost", Sans-serif;
+}
+#TESTIMONIAL_img-text h6{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #3E3E3EB5;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#OURNEWStext p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #6722b5;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px;
+    display: block;
+}
+#OURNEWStext h5{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #19082d;
+    margin: 0;
+}
+
+#OURNEWS{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0rem;
+}
+
+#OURNEWS h6{
+    /* position: relative; */
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #3e3e3e;
+    /* margin-right: 45px; */
+    letter-spacing: 0.1em;
+    margin-top: 3px;
+}
+#OURNEWS-text p{
+    padding-top: 1rem;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: Jost;
+    margin-bottom: 18px;
+}
+#OURNEWS_inner_body{
+    text-align: center;
+}
+#OURNEWS-text p:hover{
+    color: #6722b5;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* LETSTALK */
+
+#LETSTALK h6{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ff7425;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 10px;
+    display: block;
+}
+
+#LETSTALK h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color:#ffffff;
+    margin: 0;
+}
+
+#LETSTALK p{
+    font-size: 18px;
+    margin-top: 1rem;
+    padding: 0rem 9rem 0rem 0rem;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+#LETSTALK_input input{
+    font-size: 18px;
+    padding: 18px 30px 18px 30px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    color: #FFFFFF;
+    background-color: #FFFFFF12;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.05);
+    border: none !important;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+#LETSTALK_input textarea{
+    font-size: 18px;
+    padding: 18px 30px 18px 30px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    color: #FFFFFF;
+    background-color: #FFFFFF12;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.05);
+    border: none !important;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    margin-top: 1rem;
+}
+#LETSTALK_form{
+    margin-top: 2rem;
+}
+#LETSTALKIMG{
+    width: 100%;
+}
+#LETSTALKIMG img{ 
+    width: 100%;
+    /* height: 95vh; */
+}
+#LETSTALK_form ::placeholder{
+    color: white;
+}
+
+#LETSTALK_btn{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#LETSTALK_btn1{
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(300deg, #ff7425 0%, #ff7425 100%);
+    padding: 21px 36px 21px 36px;
+    text-transform: uppercase;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+#LETSTALK_btn2{
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    /* line-height: 70px; */
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
+    margin: 0rem 2rem;
+    border: none;
+}
+#LETSTALK_btn2 i{
+  font-size: 2rem;
+}
+#LETSTALK_btn3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fff;
+    /* text-align: center; */
+}
+
+#NavSet{
+    margin-left: 10rem;
+}
+#NavSet li{
+    margin-left: 2rem;
+}
+.NavIdSet{
+    display: flex;justify-content: space-between;
+}
+#main_nav_small{
+    display: none;
+}
+#NavSet li a{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    height: 110px;
+    line-height: 110px;
+    padding: 0;
+    color: #19082d;
+    position: relative;
+    font-family: Poppins;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+#NavSet li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #6722b5;
+}
+
+#NavSet1 li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Poppins;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
 
 
 
 
 
 @media(min-width:280px) and (max-width:540px){
+    #main_nav_large{
+        display: none;
+        padding: 0rem;
+    }
+    #main_nav_small{
+        display: block;
+    }
     #mainCard-session{
         padding: 1rem;
     }
@@ -343,15 +706,67 @@
         font-size: 25px;
     }
     #mainCard-session2{
-        padding: 2rem;
+        padding: 1rem;
         background-color: #ffffff;
     }
     .plan_btn{
         width: 100%;
+        margin: 1rem 0rem;
     }
     #monthly{
         margin: 0rem 0.2rem;
         padding: 0.6rem 1.7rem;
+    }
+    #mainCard-session3{
+        padding:4rem 1rem;
+    }
+    #TESTIMONIAL_caret{
+        display: flex;
+    }
+    #TESTIMONIAL_caret i{
+        font-size: 1rem;
+        margin: 0rem 0.4rem;
+    }
+    #mainCard-session4{
+        padding: 3rem 1rem;
+    }
+    #LETSTALK{
+        text-align: center;
+        padding: 2rem 0rem;
+    }
+    #LETSTALK h2{
+        font-size: 40px;
+    }
+    #LETSTALK p{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    #LETSTALK_btn{
+        display: block;
+        /* text-align: start; */
+        align-items: center;
+    }
+    #LETSTALK_btn3{
+        margin-top: 1rem;
+    }
+    #Main_banner{
+        background-image: url(./img/main-bg.jpg);
+        background-size: 100% 125%;
+        height: 145vh;
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+    #Main_banner_inner{
+        padding: 0rem 0rem;
+    }
+    #Main_banner_inner h1{
+        font-size:45px;
+    }
+    #Main_banner_inner p{
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    #banner_main_btn{
+        margin: 1rem 0rem 2rem 0rem;
     }
 }
 
@@ -373,5 +788,19 @@
     #monthly{
         margin: 0rem 0.2rem;
         padding: 0.6rem 1.7rem;
+    }
+    .plan_btn{
+        width: 45%;
+        margin: 1rem 16rem;
+    }
+    #Main_banner_inner h1{
+        font-size:45px;
+    }
+    #Main_banner{
+        background-image: url(./img/main-bg.jpg);
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100%;
+        padding: 0rem 1rem;
     }
 }
