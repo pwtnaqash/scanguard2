@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .animation-style.two {
+            left: 7%;
+            bottom: 11%;
+            max-width: 85px;
+        }
+
+        .animation-style {
+            position: absolute;
+        }
+
+        .rotated-style {
+            animation: rotated-style 11s linear infinite;
+        }
+
+        @keyframes rotated-style {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            9% {
+                transform: rotate(5deg);
+                left: 6%;
+            }
+
+            15% {
+                transform: rotate(35deg);
+                left: 5%;
+            }
+
+            23% {
+                transform: rotate(9deg);
+                left: 4%;
+            }
+
+            30% {
+                transform: rotate(50deg);
+                left: 5%;
+            }
+
+            50% {
+                transform: rotate(90deg);
+                left: 6%;
+            }
+
+            65% {
+                transform: rotate(177deg);
+                left: 7%;
+            }
+
+            75% {
+                transform: rotate(145deg);
+            }
+
+            80% {
+                transform: rotate(100deg);
+            }
+
+            85% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(230deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/img/shape1 (1).png" class="animation-style two rotated-style" alt="">
+
+</body>
+
+</html>

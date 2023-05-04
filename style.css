@@ -4,14 +4,235 @@
     box-sizing: border-box;
 }
 
+/* start image animation */
+
+.rotate_01{
+    display: block;
+    position:absolute;
+    top: 21%;
+    left: 100%;
+    /* right: ; */
+    height: 90px;
+    width: 90px;
+    margin: -60px 0 0 -280px;
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin{
+    100%{transform: rotate(360deg)}
+}
+
+
+/* second img */
+
+.rotate02{
+    animation: infinite-rotate 19s linear infinite;
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    /* right: ; */
+    height: 80px;
+    width: 80px;
+    margin: -60px 0 0 -280px;
+}
+
+@keyframes infinite-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+    10% {
+        transform: rotate(60deg);
+    }
+
+    40% {
+        transform: rotate(-60deg);
+    }
+
+    60% {
+        transform: rotate(60deg);
+    }
+
+    90% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#banner_inner_icon_bottom{
+    margin-bottom: 5rem;
+}
+
+
+
+/* shap animation */
+
+.animation-style.two {
+    left: 7%;
+    bottom: 11%;
+    max-width: 85px;
+    bottom: 0;
+}
+
+.animation-style {
+    position: absolute;
+}
+
+.rotated-style {
+    animation: rotated-style 11s linear infinite;
+}
+
+@keyframes rotated-style {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    9% {
+        transform: rotate(5deg);
+        left: 6%;
+    }
+
+    15% {
+        transform: rotate(35deg);
+        left: 5%;
+    }
+
+    23% {
+        transform: rotate(9deg);
+        left: 4%;
+    }
+
+    30% {
+        transform: rotate(50deg);
+        left: 5%;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        left: 6%;
+    }
+
+    65% {
+        transform: rotate(177deg);
+        left: 7%;
+    }
+
+    75% {
+        transform: rotate(145deg);
+    }
+
+    80% {
+        transform: rotate(100deg);
+    }
+
+    85% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(230deg);
+    }
+}
+
+/* end shap animation */
+
+
+
+
+
+/* end image animation */
+
+/* Style for the "animation-style.one" class */
+.animation-style.one {
+    position: absolute;
+    left: -1rem !important;
+    top: -1px;
+    bottom: 0;
+    z-index: -11 !important;
+  }
+  
+  /* Style for the image element */
+  .animation-style1 {
+    position: relative; /* needed to use the transform property */
+    
+  }
+  
+  /* Animation for the "scale" class */
+  .scale {
+    animation-duration: 2s;
+    animation-name: scale;
+    animation-iteration-count: infinite; /* using 'infinite' instead of 'alternate' */
+    animation-direction: alternate; /* this is the default, so you don't really need to specify it */
+    transform: translateX(2%); /* start the image off the right side of the screen */
+  }
+  
+  /* Keyframes for the "scale" animation */
+  @keyframes scale {
+    0% {
+      transform: translateX(3%); /* starting position, off the right side of the screen */
+    }
+    50% {
+      transform: translateX(5%); /* halfway through the animation, move the image back to its original position */
+    }
+    100% {
+      transform: translateX(2%); /* ending position, off the right side of the screen again */
+    }
+  }
+
+  
+
+/* //////////////////// */
+
+#aminated_img{
+    background-image: url(./img/hero-shpae-min.png);
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 45%;
+    position: absolute;
+}
+
+#aminated_img_Main{
+    left: -3rem !important;
+    top: -2%;
+    z-index: -11;
+    transform: scale 2s alternate infinite;
+}
+.scale{
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: scale;
+    left: 3rem !important;
+    top: 2%;
+    transition:all ease-in-out;
+}
+
+
+
 #Main_banner{
     background-image: url(./img/main-bg.jpg);
     background-size: 100% 120%;
     height: 120vh;
     width: 100%;
+    z-index: 1;
+    position: relative;
 }
 #Main_banner_inner{
-    height: 120vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -828,7 +1049,9 @@
     color: #ff7425; 
     transition: all 0.3s ease-in-out;
 }
-
+#main_nav_large img{
+    z-index: 11;
+}
 
 
 @media(min-width:280px) and (max-width:540px){
@@ -910,6 +1133,7 @@
     }
     #Main_banner_inner{
         padding: 0rem 0rem;
+        height: 130vh;
     }
     #Main_banner_inner h1{
         font-size:45px;
@@ -927,6 +1151,11 @@
     #ScannFooter1 h1{
         display: block;
     }
+    .animation-style1 {
+        position: relative; /* needed to use the transform property */
+        width: 95%;
+        height: 90vh;
+      }
 }
 
 
