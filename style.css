@@ -87,10 +87,17 @@
 }
 
 #mainCard-session4{
-    padding: 6rem 4rem;
+    padding: 3rem 4rem;
     background-color: #e5e5e5;
     width: 100%;
     text-align: center;
+}
+
+#mainCard-Footer{
+    padding: 3rem 2rem 0rem 2rem;
+    background-color:#1d1c2d !important;
+    width: 100%;
+    /* text-align: center; */
 }
 
 #mainCard-session3{
@@ -637,7 +644,7 @@
 }
 
 #NavSet{
-    margin-left: 9.5rem;
+    margin-left: 9rem;
 }
 #NavSet li{
     margin-left: 2rem;
@@ -647,6 +654,10 @@
 }
 #main_nav_small{
     display: none;
+}
+#main_nav_small img{
+    width: 100%;
+    display: inline;
 }
 #NavSet li a{
     font-size: 18px;
@@ -673,8 +684,149 @@
     transition: all 0.3s ease;
     text-transform: capitalize;
 }
+#first_Footer{
+    align-items: center;
+    border-bottom: 1px solid silver;
+}
+#second_Footer{
+    padding: 2rem 0rem;
+    border-bottom: 1px solid silver;
+}
+#first_Footer h1{
+    position: relative;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #ffffff;
+}
 
+#ScannFooter1 h1{
+    position: relative;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    display: none;
+}
 
+#ScannFooter p{
+    margin: 20px 0px 20px 0;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#ScannFooter input[type="email"]{
+    width: 85%;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin: 0;
+    color: red !important;
+    overflow: hidden;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    opacity: 1;
+}
+
+#ScannFooter button{
+    position: relative;
+    border: none;
+    background: #6722b5;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    outline: none;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+#ScannFooter button:hover{
+    background: #ff7425;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#foter_icon{
+    display: flex;
+    margin: 3rem 0rem 0rem 0rem;
+}
+#foter_icon i{
+    color: #ffffff;
+    display: block;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    width: 38px;
+    height: 38px;
+    margin-right: 1rem;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+#foter_icon i:hover{
+    background: #ff7425;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+#ScannFooter1 ul li{
+    list-style-type: none;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 6px 0 4px 0px;
+    display: inline-block;
+    color: #ffffff;
+    opacity: .8;
+    transition: all 0.3s;
+    display: block;
+    /* text-align: center; */
+}
+
+#ScannFooter1 ul li:hover{
+    color: #ff7425;
+    transition: all 0.3s ease-in-out;
+}
+
+#thred_Footer{
+    display: flex;
+    justify-content: space-between !important;
+    padding: 1rem 0rem;
+}
+#thred_Footer p{
+    transition: all 0.4s;
+    color: #ffffff;
+}
+
+#thred_Footer2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#thred_Footer2 a:hover{
+    color: #ff7425;
+    transition: all 0.3s ease-in-out;
+}
+#thred_Footer1{
+    display: flex;
+}
+
+#thred_Footer1 li a{
+    font-size: 16px;
+    font-weight: 300;
+    opacity: .8;
+    color: #ffffff;
+}
+
+#thred_Footer1 li a:hover{
+    color: #ff7425; 
+    transition: all 0.3s ease-in-out;
+}
 
 
 
@@ -767,6 +919,12 @@
     }
     #banner_main_btn{
         margin: 1rem 0rem 2rem 0rem;
+    }
+    #first_Footer h1{
+        display: none;
+    }
+    #ScannFooter1 h1{
+        display: block;
     }
 }
 
