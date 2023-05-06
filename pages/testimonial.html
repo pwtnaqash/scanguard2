@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScannGuard</title>
+
+    <!-- bootstarp link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+            "></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/6286729677.js" crossorigin="anonymous"></script>
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background-color:#faf9ff ;">
+        <!-- start nav -->
+
+        <nav class="navbar navbar-expand-lg" id="main_nav_large">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo2.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: black;">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse NavIdSet" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="NavSet">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./blogs.html">blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./testimonial.html">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./contact.html">contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="NavSet">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- small nav -->
+
+        <nav class="navbar navbar-expand-lg" id="main_nav_small">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <!-- <img src="./img/logo.png" alt=""> -->
+                    <h1>scannGuard</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: black;">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="NavSet1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blogs.html">blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./testimonial.html">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- end nav -->
+    </div>
+
+    <!-- TESTIMONIAL -->
+
+    <div class="container-fluid" id="mainCard-session3">
+        <div id="TESTIMONIAL_main">
+            <div id="TESTIMONIAL_title">
+                <p>TESTIMONIAL</p>
+                <h5>What people are saying!</h5>
+            </div>
+            <div id="TESTIMONIAL_caret">
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="row" id="mainCARD_session">
+
+            <div class="col-md-6 TESTIMONIAL" id="cardsession_inner">
+                <div class="card" id="card2">
+                    <div class="card-body">
+                        <div id="free_plane2">
+                            <img src="../img/quote.png" id="quest1" style="width:2rem ;" alt="">
+                            <img src="../img/quote2.png" id="quest2" style="width:2rem ;" alt="">
+                        </div>
+                        <div id="TESTIMONIAL-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio!
+                                Animi modi dolores sapiente consectetur voluptatibus! Lorem ipsum dolor,
+                                dipisicing elit. Alias, accusantium explicabo?
+                            </p>
+                        </div>
+                        <div id="TESTIMONIAL_user">
+                            <div>
+                                <img src="../img/testi2.png" style="width: 4rem;height: 4rem;" alt="">
+                            </div>
+                            <div id="TESTIMONIAL_img-text">
+                                <h4>Billu Gol</h4>
+                                <h6>CEO, Agrok Inc.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 TESTIMONIAL" id="cardsession_inner">
+                <div class="card" id="card2">
+                    <div class="card-body">
+                        <div id="free_plane2">
+                            <img src="../img/quote.png" id="quest1" style="width:2rem ;" alt="">
+                            <img src="../img/quote2.png" id="quest2" style="width:2rem ;" alt="">
+                        </div>
+                        <div id="TESTIMONIAL-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio!
+                                Animi modi dolores sapiente consectetur voluptatibus! Lorem ipsum dolor,
+                                dipisicing elit. Alias, accusantium explicabo?
+                            </p>
+                        </div>
+                        <div id="TESTIMONIAL_user">
+                            <div>
+                                <img src="../img/testi2.png" style="width: 4rem;height: 4rem;" alt="">
+                            </div>
+                            <div id="TESTIMONIAL_img-text">
+                                <h4>Billu Gol</h4>
+                                <h6>CEO, Agrok Inc.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="container-fluid" id="mainCard-Footer">
+        <div class="row" id="first_Footer">
+            <div class="col-md-3">
+                <img src="../img/logo2.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <h1>Services</h1>
+            </div>
+            <div class="col-md-3">
+                <h1>Resources</h1>
+            </div>
+            <div class="col-md-3">
+                <h1>Information</h1>
+            </div>
+        </div>
+
+
+        <div class="row" id="second_Footer">
+            <div class="col-md-3" id="ScannFooter">
+                <p>You will get weekly update on Email</p>
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+                <div id="foter_icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-product-hunt"></i>
+                </div>
+            </div>
+            <div class="col-md-3 col-6" id="ScannFooter1">
+                <ul>
+                    <h1>Services</h1>
+                    <li>Digital Marketing</li>
+                    <li>Video Production</li>
+                    <li>UX Design</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6" id="ScannFooter1">
+                <ul>
+
+                    <h1>Resources</h1>
+                    <li>Digital Marketing</li>
+                    <li>Video Production</li>
+                    <li>UX Design</li>
+                    <li>Web Development</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6" id="ScannFooter1">
+                <ul>
+                    <h1>Information</h1>
+                    <li>Digital Marketing</li>
+                    <li>Video Production</li>
+                    <li>UX Design</li>
+                    <li>Web Development</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="thred_Footer">
+            <div id="thred_Footer2">
+                <p>© 2022 Swipy. Designed By <a href="">RSTheme</a></p>
+            </div>
+            <div id="thred_Footer1">
+                <li>
+                    <a href="">About Me</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

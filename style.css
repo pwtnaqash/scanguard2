@@ -715,6 +715,15 @@
     margin: 0;
 }
 
+#OURNEWStext_blog h5{
+    text-align: start;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #19082d;
+    margin: 0;
+}
+
 #OURNEWS{
     display: flex;
     justify-content: space-between;
@@ -740,8 +749,23 @@
     font-family: Jost;
     margin-bottom: 18px;
 }
+
+#OURNEWS-text h6{
+    padding-top: 1rem;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: Jost;
+    margin-bottom: 18px;
+}
+
+
 #OURNEWS_inner_body{
     text-align: center;
+}
+
+#OURNEWS_inner_body_blog{
+    text-align: start;
 }
 #OURNEWS-text p:hover{
     color: #6722b5;
@@ -880,6 +904,18 @@
     width: 100%;
     display: inline;
 }
+#main_nav_small h1{
+    font-size: 1.9rem;
+    border: 1px solid #26064b;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 900 !important;
+    margin-right: 10px;
+    background-color: #26064b;
+    font-family: Poppins;
+    color: white;
+    text-transform: capitalize;
+}
 #NavSet li a{
     font-size: 18px;
     font-weight: 700;
@@ -903,6 +939,7 @@
     font-weight: 700;
     font-family: Poppins;
     transition: all 0.3s ease;
+    color: black;
     text-transform: capitalize;
 }
 #first_Footer{
@@ -995,6 +1032,30 @@
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
+#foter_icon2{
+    display: flex;
+    margin: 3rem 0rem 0rem 0rem;
+}
+
+#foter_icon2 i{
+    color: white;
+    display: block;
+    background: black;
+    border-radius: 7px;
+    width: 38px;
+    height: 38px;
+    margin-right: 1rem;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+#foter_icon2 i:hover{
+    background: #ff7425;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
 #ScannFooter1 ul li{
     list-style-type: none;
     margin-top: 1rem;
@@ -1052,6 +1113,106 @@
 #main_nav_large img{
     z-index: 11;
 }
+
+
+
+
+/* about page */
+#about_banner{
+    background-image: url(./img/price-bg1.png);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 0rem;
+}
+#inner_barcode{
+    width: 100%;
+}
+#inner_barcode img{
+    width: 100% !important;
+}
+#main_about{
+    width: 100% !important;
+    padding: 0rem !important;
+}
+#about_banner_img{
+    width: 100%;
+}
+#about_banner_img img{
+    width: 40%;
+    animation: ScannAbout 11s linear infinite;
+}
+
+@keyframes ScannAbout {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(190deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+#about_banner_text h1{
+    font-size: 1.3rem;
+    text-align: start;
+    padding: 3rem;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+#main_contact{
+    padding: 3rem 3rem;
+}
+
+
+#main_contact h1{
+    font-size: 1.3rem;
+    text-align: start;
+    /* padding: 3rem; */
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main_contact p{
+    font-size: 1rem;
+    text-align: start;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+#inner_contact{
+    padding: 3rem;
+}
+#inner_contact ul li{
+    list-style-type: none;
+    font-size: 1rem;
+    text-align: start;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+#inner_contact span{
+    font-weight: 600;
+}
+#main_contact_contact{
+    padding: 7rem 3rem;
+    background-color: #faf9ff;
+}
+
+
+
+
+
 
 
 @media(min-width:280px) and (max-width:540px){
@@ -1156,6 +1317,23 @@
         width: 95%;
         height: 90vh;
       }
+      #main_contact_contact{
+        padding: 5rem 0rem;
+        background-color: #faf9ff;
+    }
+    #about_banner_img img{
+        width: 100%;
+    }
+    #about_banner{
+        background-image: url(./img/price-bg1.png);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        /* padding: 0rem; */
+    }
+    #about_banner_text h1{
+        padding: 1rem;
+    }
 }
 
 
