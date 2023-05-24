@@ -1167,6 +1167,37 @@
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
+#about_banner_text h2{
+    font-size: 1.3rem;
+    text-align: start;
+    padding: 3rem;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+#about_banner_text p{
+    font-size: 0.7rem;
+    text-align: start;
+    padding: 0rem 3rem;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+#about_banner_text button{
+    border: none;
+    font-size: 1.3rem;
+    background-color: rgba(245, 26, 26, 0.781);
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 6rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+}
+#about_banner_text span{
+    color: rgba(245, 26, 26, 0.781);
+}
 #main_contact{
     padding: 3rem 3rem;
 }
