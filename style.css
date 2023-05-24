@@ -1259,7 +1259,8 @@
 #signUpPage button{
     width: 100%;
     border: 1px solid silver;
-    background-color: #ECDFF5;
+    background-color: #ba93d6;
+    color: white;
     padding: 0.5rem;
     text-transform: capitalize;
     font-weight: 500;
@@ -1315,7 +1316,7 @@
     border-radius: 3rem;
 }
 #signup_inner_button button:hover{
-    background-color: #ba93d67a;
+    background-color: #ba93d60a;
     color: black;
 }
 #signup-footer_text p{
