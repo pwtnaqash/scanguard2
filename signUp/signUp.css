@@ -7,6 +7,52 @@ body{
     /* background-color: #eeeeee !important; */
     background-image: url('../img/main-bg.jpg');
 }
+
+/* start select design */
+#main_login_SelestDesign{
+    padding: 4rem;
+    border: 1px solid silver;
+    border-radius: 0.4rem;
+    /* background-color: #ffffffb0; */
+    width: 80% !important;
+    /* height: 95vh; */
+    text-transform:capitalize;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #48065763;
+}
+#main_login_SelestDesign h6{
+    font-weight: 700;
+    /* text-decoration: underline; */
+    font-size: 1.3rem;
+    font-family: italic;
+    padding: 1rem 0rem;
+    border-bottom: 3px solid #480657d3;
+}
+
+#SelestDesign img{
+    margin-top: 2rem;
+    width: 100%;
+    height: 40vh;
+}
+
+#Submit_btn i{
+    color: white;
+}
+
+#Submit_btn:hover i{
+    color: #480657d3;
+}
+
+
+/* end select design */
+
+
 #main_login{
     padding: 1rem;
     border: 1px solid silver;
@@ -15,7 +61,7 @@ body{
     width: 60% !important;
     /* height: 95vh; */
     text-transform:capitalize;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -26,11 +72,13 @@ body{
 }
 #main_login h6{
     font-weight: 700;
-    text-decoration: underline;
+    border-bottom: 3px solid #480657d3;
     font-size: 1.3rem;
     font-family: italic;
     padding: 1rem 0rem;
+    margin-bottom: 1.2rem;
 }
+
 #main_login input{
     background-color: rgba(255, 255, 255, 0.103);
 }
@@ -51,11 +99,22 @@ form label{
 #Submit_btn{
     /* width: 100% !important; */
     background-color: #ad78eb;
+    padding: 1rem;
     border: 1px solid #eeeeee;
     color: #2a005a;
     font-size: 1.2rem;
     font-weight: 700;
 }
+#Submit_btn2{
+    /* width: 100% !important; */
+    background-color: #ad78eb;
+    padding: 1rem;
+    border: 1px solid #eeeeee;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 #Submit_btn:hover{
     background-color: #ae78eb36;
     font-size: 1.2rem;
