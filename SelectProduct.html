@@ -41,51 +41,67 @@
         <div id="Inner_product_Page">
             <div id="fTitle">
                 <h1>Select the QR you want to buy !!</h1>
-                <button>Total : Rs 0</button>
+                <button>Total : Rs <span id="selectPrice">0</span></button>
             </div>
             <div class="row" id="innwerProduct">
 
                 <div class="col-md-3" id="ProductCol">
                     <img src="./img/sports-car.png" alt="">
                     <h2>car</h2>
-                    <select class="form-select" id="ProductSelect" aria-label="Default select example">
-                        <option selected>not selected</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select" onclick="GetCarPrice()" id="ProductSelect"
+                        aria-label="Default select example">
+                        <option selected value="0">not selected</option>
+                        <option value="249">2 sticker</option>
+                        <option value="349">4 sticker</option>
+                        <option value="449">6 sticker</option>
+                        <option value="549">8 sticker</option>
+                        <option value="649">10 sticker</option>
+                        <option value="749">12 sticker</option>
                     </select>
                 </div>
 
                 <div class="col-md-3" id="ProductCol">
                     <img src="./img/store.png" alt="">
                     <h2>Store</h2>
-                    <select class="form-select" id="ProductSelect" aria-label="Default select example">
-                        <option selected>not selected</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select getStorePrice" onclick="GetCarPrice()" id="ProductSelect"
+                        aria-label="Default select example">
+                        <option selected value="0">not selected</option>
+                        <option value="249">1 sticker</option>
+                        <option value="349">2 sticker</option>
+                        <option value="449">3 sticker</option>
+                        <option value="549">4 sticker</option>
+                        <option value="649">5 sticker</option>
+                        <option value="749">6 sticker</option>
                     </select>
                 </div>
 
                 <div class="col-md-3" id="ProductCol">
                     <img src="./img/pet.png" alt="">
                     <h2>Pets</h2>
-                    <select class="form-select" id="ProductSelect" aria-label="Default select example">
-                        <option selected>not selected</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select getPetsPrice" onclick="GetCarPrice()" id="ProductSelect"
+                        aria-label="Default select example">
+                        <option selected value="0">not selected</option>
+                        <option value="249">1 sticker</option>
+                        <option value="349">2 sticker</option>
+                        <option value="449">3 sticker</option>
+                        <option value="549">4 sticker</option>
+                        <option value="649">5 sticker</option>
+                        <option value="749">6 sticker</option>
                     </select>
                 </div>
 
                 <div class="col-md-3" id="ProductCol">
                     <img src="./img/bike.png" alt="">
                     <h2>Bike / Scooter</h2>
-                    <select class="form-select" id="ProductSelect" aria-label="Default select example">
-                        <option selected>not selected</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select class="form-select getBikePrice" onclick="GetCarPrice()" id="ProductSelect"
+                        aria-label="Default select example">
+                        <option selected value="0">not selected</option>
+                        <option value="249">2 sticker</option>
+                        <option value="349">4 sticker</option>
+                        <option value="449">6 sticker</option>
+                        <option value="549">8 sticker</option>
+                        <option value="649">10 sticker</option>
+                        <option value="749">12 sticker</option>
                     </select>
                 </div>
 
@@ -102,10 +118,42 @@
             <div id="ProductCartFooterText">
                 <h2>This One time payment will get you.</h2>
                 <p><i class="fa-solid fa-headphones fa-beat-fade mr-1"></i> Lifetime ScanOwner services and support.</p>
-                <p><i class="fa-solid fa-turkish-lira-sign mr-1"></i> 30 days "no question asked" money back guarantee.</p>
+                <p><i class="fa-solid fa-turkish-lira-sign mr-1"></i> 30 days "no question asked" money back guarantee.
+                </p>
             </div>
         </div>
     </div>
+
+
+    <script>
+        function GetCarPrice() {
+            let carPrice = document.getElementById('ProductSelect').value;
+            let bikePrice = document.getElementsByClassName('getBikePrice')[0].value;
+            let PetsPrice = document.getElementsByClassName('getPetsPrice')[0].value;
+            let StorePrice = document.getElementsByClassName('getStorePrice')[0].value;
+
+            let setBttPrice = document.getElementById('selectPrice');
+
+            if (carPrice !== "0" && bikePrice !== "0") {
+                // setBttPrice.innerHTML = parseInt(carPrice) + parseInt(bikePrice);
+                // setBttPrice.innerHTML = al;
+                alert('not select')
+            } else if (carPrice !== "0") {
+                setBttPrice.innerHTML = carPrice;
+            } else if (bikePrice !== "0") {
+                setBttPrice.innerHTML = bikePrice;
+            }else if (PetsPrice !== "0") {
+                setBttPrice.innerHTML = PetsPrice;
+            }else if (StorePrice !== "0") {
+                setBttPrice.innerHTML = StorePrice;
+            } else {
+                setBttPrice.innerHTML = "0";
+            }
+
+            console.log(carPrice);
+        }
+
+    </script>
 
 </body>
 

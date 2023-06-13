@@ -41,9 +41,9 @@
                 <div id="signUpPage">
                     <button>please help the vehicle Owner !</button>
                     <p>please select the ression below for contacting the owner</p>
-                    <div id="firstCol">
-                        <span><i class="fa-solid fa-car"></i></span>
-                        <span>vehicle light are on</span>
+                    <div id="firstCol" onclick="GetReason('vehicle light are on')">
+                        <i class="fa-solid fa-car"></i>
+                        <span id="firstColspan">vehicle light are on</span>
                     </div>
                     <div id="firstCol">
                         <span><i class="fa-solid fa-square-parking"></i></span>
@@ -66,7 +66,8 @@
                         <span>vehicle tyres have gone flat</span>
                     </div>
                     <div id="signup_inner_button">
-                        <button>send message</button>
+                        <button onclick="SendMessage()" id="Getbtn_reason">send message</button>
+                        <button onclick="SendMessageTrue()" id="Getbtn_reason1">send message</button>
                     </div>
                     <div id="signup-footer_text">
                         <p>please consider calling the owner in case of emergency</p>
@@ -82,5 +83,27 @@
             <div class="col-md col-12"></div>
         </div>
     </div>
+
+
+
+    <script>
+        function SendMessage(){
+           alert('please select reason')
+        }
+
+        function SendMessageTrue() {
+            alert('message send')
+        }
+
+
+        function GetReason(reason){
+            let btn = document.getElementById('Getbtn_reason');
+            let btn1 = document.getElementById('Getbtn_reason1');
+
+            reason === null ?
+            btn.style.color = 'yellow' :
+            (btn1.style.display = 'block') && (btn.style.display = 'none')
+        }
+    </script>
 </body>
 </html>

@@ -122,6 +122,53 @@ form label{
 }
 
 
+
+/* check out */
+#Main_inner_checkOut{
+    border: 1px solid rgba(192, 192, 192, 0.438);
+    height: 51vh;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+}
+
+#Main_inner_checkOut h5{
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: italic;
+    padding: 1rem 0rem 0rem 0rem;
+}
+#MainCheckItem{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 500;
+    padding: 0.2rem 0rem;
+}
+
+#Main_inner_checkOut button{
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #ad78eb;
+    padding: 1rem;
+    border: 1px solid #eeeeee;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#Main_inner_checkOut:hover button{
+    background-color: #ae78eb36;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#textareCheck{
+    width: 100%;
+    border: 1px solid rgba(192, 192, 192, 0.438);
+    height: 20vh;
+    border-radius: 0.3rem;
+    background-color: #eeeeee34;
+}
+
 @media(min-width:320px){
     #main_login{
         padding: 0.1rem;

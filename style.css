@@ -449,6 +449,13 @@
     height: 27rem;
 }
 
+.btncondition{
+    color: red !important;
+}
+#Getbtn_reason1{
+    display: none;
+}
+
 #SWIPY_img1{
     background-image: url(./img/about.png);
     position: absolute;
